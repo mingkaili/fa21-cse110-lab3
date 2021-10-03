@@ -151,6 +151,41 @@
                   Your browser does not support the audio element.
                   </audio>
             </section>
+            <hr>
+            <footer>
+                <form>
+                    <fieldset>
+                        <legend>Contact Us:</legend>
+                        <label for="date">Date:</label>
+                        <input type="date" id="date">
+                        <label for="name">Name: </label>
+                        <input type="text" id="name"> <br>
+                        <input type="radio" id="happy" name="happy" value="happy">
+                        <label for="happy">happy</label>
+                        <input type="radio" id="sad" name="sad" value="sad">
+                        <label for="sad">sad</label><br>
+                        <label for="education">Education:</label>
+                        <select id="education">
+                            <option selected disabled>Select any options:</option>
+                            <option value="High School">High School</option>
+                            <option value="College">College</option>
+                        </select> <br>
+                        
+                        <label for="movie_choices">Favorite Movie:</label>
+                        <input list="favorite_movies" id="movie_choices">
+                        <datalist id="favorite_movies">
+                            <option value="Iron Man">
+                            <option value="Wolvering">
+                            <option value="Fast and Furious">
+                        </datalist> <br>
+                        <label for="body">Body:</label><br>
+                        <textarea id="body"></textarea> <br>
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe">Remeber me</label>
+                        <button>Submit</button>
+                    </fieldset>
+                </form>
+            </footer>
         </main>
     </body>
 </html>
