@@ -108,7 +108,7 @@ thead ~ tbody{
 }
 
 /* Table style */
-table th {
+tr th {
     padding: 0px 12px 0px 12px;
     text-align: left;
     background-color: #627aff;
