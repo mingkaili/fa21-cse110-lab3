@@ -4,29 +4,42 @@
         <title>ProkoPark Meeting Minutes</title>
         <meta name="description" content="Team Meeting Minutes">
         <link rel="icon" href="assets/icon.ico">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            html{
+                width: 100%;
+            }
+        </style>
     </head>
     <body>
-        <main>
-            <header>
-                <h1>ProkoPark Product Cycle Meeting</h1>
-                <span><b>Subject:</b> Product Brainstorm</span> <br>
-                <span><b>Date:</b> 10/02/2021</span><br>
-                <span><b>Time:</b> 8 <em>pm</em></span><br>
-                <span><b>Location:</b> Virtual</span><br>
-                <span><b>Invitees:</b> John Hills, Thomas Savages, Don April, Kimi Liz</span><br>
-                <span><b>Head Count/Attendance:</b> John Hills, Thomas Savages, Don April, Kimi Liz</span><br>
+        <div class="no-show"></div>
+        <nav class="navbar">
+            <a href="#agenda" class="start">Agenda</a> 
+            <a href="#unfinished">Unfinished Business</a> 
+            <a href="#new_info">New Business/Brainstorm</a> 
+            <a href="#comments">Comments/Concerns</a> 
+            <a href="#recordings">Recordings</a>
+          </nav>
+        <main style="width: 100%">
+            <header class="card">
+                <div class="card-title">
+                    <h1>ProkoPark Product Cycle Meeting</h1>
+                </div>
+                <div class="card-content">
+                    <span><b>Subject:</b> Product Brainstorm</span> <br>
+                    <span><b>Date:</b> 10/02/2021</span><br>
+                    <span><b>Time:</b> 8 <em>pm</em></span><br>
+                    <span><b>Location:</b> Virtual</span><br>
+                    <span><b>Invitees:</b> John Hills, Thomas Savages, Don April, Kimi Liz</span><br>
+                    <span><b>Head Count/Attendance:</b> John Hills, Thomas Savages, Don April, Kimi Liz</span><br>
+                </div>
             </header>
-            <nav>
-                <a href="#agenda">Agenda</a> |
-                <a href="#unfinished">Unfinished Business</a> |
-                <a href="#new_info">New Business/Brainstorm</a> |
-                <a href="#comments">Comments/Concerns</a> |
-                <a href="#recordings">Recordings</a>
-              </nav>
               <hr>
-            <section id='agenda'>
-                <div>
+            <section id='agenda' class="card">
+                <div class="card-title">
                     <h2>Agenda:</h2>
+                </div>
+                <div>
                     <details>
                         <summary>Click me to understand what agenda is</summary>
                         The discussion topic of the meeting.
@@ -72,9 +85,11 @@
             </section>
 
             <hr>
-            <section id="unfinished">
-                <div>
+            <section id="unfinished" class="card">
+                <div class="card-title">
                     <h2>Unfinished:</h2>
+                </div>
+                <div>
                     <p>From the last product cycle meeting, some of the unfinished tasks includes fixing latencies on
                         the main page for login. Besides that, everything was finished!
                     </p>
@@ -83,9 +98,11 @@
             </section>
             <hr>
 
-            <section id="new_info">
-                <div>
+            <section id="new_info" class="card">
+                <div class="card-title">
                     <h2>New Business/Brainstorm:</h2>
+                </div>
+                <div>
                     <h3>Table of Tasks:</h3>
                     <table>
                         <thead>
@@ -131,8 +148,10 @@
             </section>
 
             <hr>
-            <section id="comments">
-                <h2>Comments/Concerns</h2>
+            <section id="comments" class="card">
+                <div class="card-title">
+                    <h2>Comments/Concerns</h2>
+                </div>
                 <h3>Comments:</h3>
                 <p>Make sure to complete tasks on time, and request reviews from 2 engineers to veify work!</p>
                 <h3>Concerns:</h3>
@@ -141,51 +160,59 @@
 
             <hr>
             <section id="recordings">
-                <h2>Recordings: </h2>
-                <h3>Video:</h3>
-                <video width="500" height="300" controls muted>
-                    <source src="assets/videodemo.mp4" type="video/mp4">
-                  </video>
-                <h3>Audio:</h3>
-                  <audio controls>
-                    <source src="assets/videodemo.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                  </audio>
+                <div class="card-title">
+                    <h2>Recordings: </h2>
+                </div>
+                <div class="card-content">
+                    <h3>Video:</h3>
+                    <video width="500" height="300" controls muted>
+                        <source src="assets/videodemo.mp4" type="video/mp4">
+                    </video>
+                    <h3>Audio:</h3>
+                    <audio controls class="audio center">
+                        <source src="assets/videodemo.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                </div>
             </section>
             <hr>
             <footer>
-                <form>
-                    <fieldset>
-                        <legend>Contact Us:</legend>
-                        <label for="date">Date:</label>
-                        <input type="date" id="date">
-                        <label for="name">Name: </label>
-                        <input type="text" id="name"> <br>
-                        <input type="radio" id="happy" name="happy" value="happy">
-                        <label for="happy">happy</label>
-                        <input type="radio" id="sad" name="sad" value="sad">
-                        <label for="sad">sad</label><br>
-                        <label for="education">Education:</label>
-                        <select id="education">
-                            <option selected disabled>Select any options:</option>
-                            <option value="High School">High School</option>
-                            <option value="College">College</option>
-                        </select> <br>
-                        
-                        <label for="movie_choices">Favorite Movie:</label>
-                        <input list="favorite_movies" id="movie_choices">
-                        <datalist id="favorite_movies">
-                            <option value="Iron Man">
-                            <option value="Wolvering">
-                            <option value="Fast and Furious">
-                        </datalist> <br>
-                        <label for="body">Body:</label><br>
-                        <textarea id="body"></textarea> <br>
-                        <input type="checkbox" id="rememberMe">
-                        <label for="rememberMe">Remeber me</label>
-                        <button>Submit</button>
-                    </fieldset>
-                </form>
+                <div class="flex">
+                    <form class="flex-content">
+                        <fieldset>
+                            <legend>Contact Us:</legend>
+                            <div class="">
+                                <label for="date">Date:</label>
+                                <input type="date" id="date">
+                            </div>
+                            <label for="name">Name: </label>
+                            <input type="text" id="name"> <br>
+                            <input type="radio" id="happy" name="happy" value="happy">
+                            <label for="happy">happy</label>
+                            <input type="radio" id="sad" name="sad" value="sad">
+                            <label for="sad">sad</label><br>
+                            <label for="education">Education:</label>
+                            <select id="education">
+                                <option selected disabled>Select any options:</option>
+                                <option value="High School">High School</option>
+                                <option value="College">College</option>
+                            </select> <br>
+                            
+                            <label for="movie_choices">Favorite Movie:</label>
+                            <input list="favorite_movies" id="movie_choices">
+                            <datalist id="favorite_movies">
+                                <option value="Iron Man">
+                                <option value="Wolvering">
+                                <option value="Fast and Furious">
+                            </datalist> <br>
+                            <label for="body">Body:</label><br>
+                            <textarea id="body"></textarea> <br>
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">Remeber me</label>
+                            <button>Submit</button>
+                        </fieldset>
+                    </form>
+                </div>
             </footer>
         </main>
     </body>
