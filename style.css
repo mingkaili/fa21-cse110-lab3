@@ -1,0 +1,208 @@
+@font-face {
+    font-family: open_sans;
+    src: url(./fonts/font.ttf);
+}
+
+* {
+    font-family: open_sans;
+    font-weight: lighter;
+    color: black;
+}
+
+a[class~="start"] {
+    font-weight: bold;
+}
+
+li:first-of-type + li {
+    font-weight: bold;
+}
+
+strong, b{
+    font-weight: bold;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 100px;
+    margin: 0;
+    background-color: rgb(235, 235, 235);
+}
+
+.no-show{
+    display: none;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.67em 0;
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+/* main display */
+main {
+    width: 100%; 
+    margin-top: 4pc;
+}
+
+hr {
+    margin: 0px 40pt 0px 40pt;
+}
+
+nav {
+    position: fixed;
+    background-color: #3f51b5;
+    top: 0;
+    width: 100%;
+}
+  
+nav a {
+    display: block;
+    float: left;
+    padding: 14px 16px 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+}
+  
+nav a:hover {
+    background: #627aff;
+    color: black;
+}
+
+nav a:active {
+    background: #626fff;
+    color: black;
+}
+
+/* When on medium sized screens, 
+   fix style for top bar */
+@media all and (max-width: 800px) {
+    nav {
+        overflow-y: hidden;
+    }
+}
+
+/* When on small sized screens, 
+   fix style for top bar */
+   @media all and (max-width: 500px) {
+    nav {
+        overflow: hidden;
+    }
+}
+
+thead ~ tbody{
+    width: 100%;
+}
+
+/* Table style */
+table th {
+    padding: 0px 12px 0px 12px;
+    text-align: left;
+    background-color: #627aff;
+    color: white;
+}
+
+td, th {
+    padding: 3px;
+}
+
+tbody tr:nth-child(odd){background-color: #f2f2f2;}
+
+tbody tr:hover {background-color: rgb(213, 212, 212);}
+
+
+/* card with box shadow */
+.card {
+    display: block;
+    position: static;
+    margin: 10pt 40pt;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 hsl(0, 1, 2);
+    border-style: none;
+    border-color: white;
+    border-radius: 0px;
+    border-width: 0px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-content {
+    padding: 0px 14px;
+}
+
+.card-title {
+    border-bottom: 0.5pt solid rgb(157, 157, 157);
+    margin-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+    position: static;
+    margin: 10pt 40pt;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 hsl(0, 1, 2);
+    border-style: none;
+    border-color: white;
+    border-radius: 0px;
+    border-width: 0px;
+    justify-content: 'center';
+    align-items: center;
+}
+
+.flex-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+#recordings{
+    display: grid;
+    position: static;
+    margin: 10pt 40pt;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 hsl(0, 1, 2);
+    border-style: none;
+    border-color: white;
+    border-radius: 0px;
+    border-width: 0px;
+}
+
+#recordings > video {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: row1-start;
+    grid-row-end: 3;
+}
+
+.audio.center{
+    width: 100%;
+}
