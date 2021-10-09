@@ -182,6 +182,12 @@ tbody tr:hover {background-color: rgb(213, 212, 212);}
 
 #recordings{
     display: grid;
+    grid-template-areas:
+    'title'
+    'video-start'
+    'title2'
+    'audio-start';
+  grid-gap: 10px;
     position: static;
     margin: 10pt 40pt;
     padding-top: 10px;
@@ -197,10 +203,15 @@ tbody tr:hover {background-color: rgb(213, 212, 212);}
 }
 
 #recordings > video {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: row1-start;
-    grid-row-end: 3;
+    grid-row-start: video-start;
+}
+
+#recordings > h3 {
+    grid-row-start: title;
+}
+
+#recordings > .audio {
+    grid-row-start: audio-start;
 }
 
 .audio.center{
